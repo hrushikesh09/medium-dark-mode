@@ -8,7 +8,17 @@ CSS-in-JS class names are hashed/regenerated on every deploy, so this theme is
 implemented as a runtime script (`medium-dark.js`) plus a static stylesheet
 (`medium-dark.css`) rather than targeting Medium's own class names.
 
-![screenshot placeholder](#)
+![Home feed](screenshot-1.png)
+![Article view](screenshot-2.png)
+
+## Pre-built download
+
+A pre-built macOS `.dmg` is available on the [Releases page](../../releases)
+instead of building it yourself.
+
+**Note:** it's unsigned and not notarized, so macOS Gatekeeper will block it
+on first launch. To open it: right-click the app → **Open**, or run
+`xattr -cr Medium.app` in Terminal.
 
 ## What's included
 
@@ -69,15 +79,6 @@ pake https://medium.com --name Medium --dark-mode \
 
 The output installer (`.dmg` on macOS, `.msi` on Windows, `.deb`/`.AppImage`
 on Linux) will be placed in the current directory.
-
-## Pre-built download
-
-A pre-built macOS `.dmg` is available on the [Releases page](../../releases)
-instead of building it yourself.
-
-**Note:** it's unsigned and not notarized, so macOS Gatekeeper will block it
-on first launch. To open it: right-click the app → **Open**, or run
-`xattr -cr Medium.app` in Terminal.
 
 ## Known limitations
 
