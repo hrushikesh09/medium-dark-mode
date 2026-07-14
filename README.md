@@ -9,7 +9,6 @@ implemented as a runtime script (`medium-dark.js`) plus a static stylesheet
 (`medium-dark.css`) rather than targeting Medium's own class names.
 
 ![Home feed](screenshot-1.png)
-![Article view](screenshot-2.png)
 
 ## Pre-built download
 
