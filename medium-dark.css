@@ -1,0 +1,48 @@
+/* Custom theme for medium.com via Pake --inject */
+
+html, body, * {
+  font-family: 'SF Pro Text', 'SF Pro Display', -apple-system, Helvetica, Arial, sans-serif !important;
+}
+
+pre, code, kbd, samp,
+pre *, code *,
+[class*="code"], [class*="Code"] {
+  font-family: 'JetBrains Mono', monospace !important;
+}
+
+html, body {
+  background-color: #202124 !important;
+}
+
+/* Bulk background darkening is handled at runtime by medium-dark.js, which
+   only recolors elements that are actually white, instead of blindly forcing
+   every <div> dark (that approach painted over transparent overlay divs that
+   sit on top of avatar images, hiding them). */
+
+/* Readable text on the dark background */
+p, span, li, a, h1, h2, h3, h4, h5, h6, div, input, textarea {
+  color: #e8eaed !important;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #9aa0a6 !important;
+}
+
+a {
+  color: #8ab4f8 !important;
+}
+
+/* Reader highlight annotations (Medium renders these as <mark>), and any
+   hover/selected affordance (e.g. topic pills) use the same accent color. */
+mark {
+  background-color: #4c4d4c !important;
+  color: #e8eaed !important;
+}
+
+/* Dark svg icon fills/strokes (including the Medium wordmark logo) and white
+   separator borders are handled at runtime by medium-dark.js, since they're
+   set via hardcoded attributes/CSS-in-JS rather than inheritable properties. */
+
+img, video, picture, svg:not([class*="icon"]) {
+  filter: none !important;
+}

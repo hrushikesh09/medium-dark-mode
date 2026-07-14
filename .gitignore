@@ -1,0 +1,8 @@
+*.dmg
+*.msi
+*.deb
+*.AppImage
+*.exe
+node_modules/
+.DS_Store
+src-tauri/
