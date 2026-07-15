@@ -8,8 +8,6 @@ CSS-in-JS class names are hashed/regenerated on every deploy, so this theme is
 implemented as a runtime script (`medium-dark.js`) plus a static stylesheet
 (`medium-dark.css`) rather than targeting Medium's own class names.
 
-![Home feed](screenshot-1.png)
-
 ## Pre-built download
 
 A pre-built macOS `.dmg` is available on the [Releases page](../../releases)
