@@ -1,7 +1,7 @@
 # Medium Dark Mode (Pake)
 
-A dark theme, custom fonts, and branding fixes for [medium.com](https://medium.com),
-packaged as a native desktop app using [Pake](https://github.com/tw93/pake).
+A dark theme and branding fixes for [medium.com](https://medium.com), packaged
+as a native desktop app using [Pake](https://github.com/tw93/pake).
 
 Medium's web app has no built-in dark mode (only its mobile app does), and its
 CSS-in-JS class names are hashed/regenerated on every deploy, so this theme is
@@ -32,8 +32,7 @@ on first launch. To open it: right-click the app → **Open**, or run
 - **Icon fixes**: SVG icons (and CSS `mask-image`-based icons) with a
   hardcoded dark fill/stroke — including the Medium wordmark logo — are
   lightened instead of disappearing against the dark background.
-- **Custom fonts**: `SF Pro Text`/`SF Pro Display` for body text, `JetBrains
-  Mono` for code blocks.
+- **Fonts**: left as Medium's own defaults (no font overrides).
 
 ## Prerequisites
 
@@ -41,22 +40,6 @@ on first launch. To open it: right-click the app → **Open**, or run
 - Node ≥22 (LTS recommended; ≥18 also works)
 - Rust ≥1.85
 - Platform build tools per [Tauri prerequisites](https://v2.tauri.app/start/prerequisites/)
-
-### Fonts
-
-This theme references fonts by name — Pake doesn't bundle fonts, so they must
-already be installed on the machine doing the build:
-
-| Font | Notes |
-| --- | --- |
-| `Helvetica` | Ships with macOS |
-| `SF Pro Text` / `SF Pro Display` | Download from [Apple Fonts](https://developer.apple.com/fonts/) |
-| `JetBrains Mono` | Download from [jetbrains.com/lp/mono](https://www.jetbrains.com/lp/mono/) |
-
-If a font isn't installed, the browser falls back to the next in the
-`font-family` list (ultimately system sans-serif/monospace) — it won't error,
-just render differently. `SF Pro` and `JetBrains Mono` aren't available on
-Windows/Linux unless installed there too.
 
 ## Building
 

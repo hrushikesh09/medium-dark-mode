@@ -1,15 +1,5 @@
 /* Custom theme for medium.com via Pake --inject */
 
-html, body, * {
-  font-family: 'SF Pro Text', 'SF Pro Display', -apple-system, Helvetica, Arial, sans-serif !important;
-}
-
-pre, code, kbd, samp,
-pre *, code *,
-[class*="code"], [class*="Code"] {
-  font-family: 'JetBrains Mono', monospace !important;
-}
-
 html, body {
   background-color: #202124 !important;
 }
